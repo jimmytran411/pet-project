@@ -1,0 +1,23 @@
+{
+  "name": "react-pet-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@frontendmasters/pet": "^1.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}
