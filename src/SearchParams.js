@@ -7,7 +7,7 @@ import Results from './Results.js';
 const SearchParams = () => {
     const [location, setLocation] = useState("Seattle, WA");
     const [breeds, setBreeds] = useState([]);
-    const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
+    const [animal, AnimalDropdown] = useDropdown("Animal", "cat", ANIMALS);
     const [breed, BreedDropdown, setBreed] = useDropdown("Breed","",breeds);
     const [pets, setPets] = useState([]);
 
