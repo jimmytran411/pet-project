@@ -9,7 +9,7 @@ const SearchParams = () => {
     const [breeds, setBreeds] = useState([]);
     const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
     const [breed, BreedDropdown, setBreed] = useDropdown("Breed","",breeds);
-    const [pet, setPets] = useState([]);
+    const [pets, setPets] = useState([]);
 
     async function requestPets() {
         const {animals} = await pet.animals({
@@ -47,7 +47,7 @@ const SearchParams = () => {
             </form>
             <AnimalDropdown />
             <BreedDropdown />
-            <Results />
+            <Results pets={pets} />
         </div>
     );
 }
