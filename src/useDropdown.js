@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import React, { useState } from "react";
 
 const useDropdown = (label, defaultState, options) => {
@@ -28,4 +26,3 @@ const useDropdown = (label, defaultState, options) => {
 };
 
 export default useDropdown;
-    
