@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
     "parcel-bundler": "^1.12.4"
@@ -19,5 +21,8 @@
     "@frontendmasters/pet": "^1.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
 }
